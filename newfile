@@ -1,0 +1,15 @@
+<?php
+
+  $bankaccount = 100;
+
+    function expense($amount, $bankaccount) {
+      $bankaccount = $bankaccount - $amount;
+      return $bankaccount;
+    }
+
+  $newbalance = expense(20, $bankaccount);
+
+  echo 'How much money did I start with this month? ' . $bankaccount . '</p>';
+  echo 'My new balance is: ' . $newbalance;
+
+?>
